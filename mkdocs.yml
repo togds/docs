@@ -1,0 +1,22 @@
+site_name: 个人文档
+
+theme: material
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - 首页: index.md
+  - devops: 
+      - 规划: devops/规划.md
+  - go:
+      - 操作文档: go/搭建环境.md
+  - clouddev:
+      - 架构: clouddev/架构.md
