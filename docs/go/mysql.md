@@ -29,9 +29,6 @@ func init() {
 	globalConfig := config.GetGlobalConfig()
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8&parseTime=True&loc=Local",
 		globalConfig.Mysql.User, globalConfig.Mysql.Password, globalConfig.Mysql.Host, globalConfig.Mysql.Port, globalConfig.Mysql.Database)
-	// dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8&parseTime=True&loc=Local",
-	// 	"togds", "Minrray@123", "10.1.22.127", 3306, "togds")
-	// 声明err变量，下面不能使用:=赋值运算符，否则_db变量会当成局部变量，导致外部无法访问_db变量
 	var err error
 	//连接MYSQL, 获得DB类型实例，用于后面的数据库读写操作。
 	_db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
