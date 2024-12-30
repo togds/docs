@@ -17,4 +17,4 @@ nav:
   - go:
       - 操作文档: go/搭建环境.md
   - togds:
-      - 架构: clouddev/架构.md
+      - 架构: togds/index.md
