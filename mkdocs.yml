@@ -16,5 +16,9 @@ nav:
   - 首页: index.md
   - go:
       - 操作文档: go/搭建环境.md
+      - 配置文件: go/config.md
+      - 连接pysql: go/mysql.md
+      - 连接redis: go/redis.md
+      - swagger文档生成: go/swagger.md
   - togds:
       - 架构: togds/index.md
