@@ -1,11 +1,17 @@
 site_name: 个人文档
 
 theme: material
-
+plugins:
+  - markmap
 
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -22,3 +28,4 @@ nav:
       - swagger文档生成: go/swagger.md
   - togds:
       - 架构: togds/index.md
+      - 数据库表设计: togds/数据库设计.md
